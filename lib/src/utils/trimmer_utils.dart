@@ -1,9 +1,7 @@
 import 'dart:developer';
 import 'dart:typed_data';
 import 'dart:ui';
-
-import 'package:get_thumbnail_video/index.dart';
-import 'package:get_thumbnail_video/video_thumbnail.dart';
+import 'package:video_thumbnail/video_thumbnail.dart';
 
 /// Formats a [Duration] object to a human-readable string.
 ///
@@ -94,7 +92,7 @@ Stream<List<Uint8List?>> generateThumbnail({
         quality: quality,
       );
 
-      log('Timestamp: $formattedTimestamp | Size: ${(bytes.length / 1000).toStringAsFixed(2)} kB');
+      log('Timestamp: $formattedTimestamp | Size: ${(bytes!.length / 1000).toStringAsFixed(2)} kB');
       log('---------------------------------');
 
       thumbnailBytes.add(bytes);

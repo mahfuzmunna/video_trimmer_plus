@@ -3,8 +3,7 @@ import 'dart:io';
 import 'dart:typed_data';
 import 'package:image/image.dart' as img;
 import 'package:flutter_native_video_trimmer/flutter_native_video_trimmer.dart';
-import 'package:get_thumbnail_video/index.dart';
-import 'package:get_thumbnail_video/video_thumbnail.dart';
+import 'package:video_thumbnail/video_thumbnail.dart';
 import 'package:path/path.dart';
 
 import 'package:flutter/material.dart';
@@ -130,7 +129,7 @@ class Trimmer {
           quality: qualityGIF,
         );
 
-        thumbnails.add(thumbnail);
+        thumbnails.add(thumbnail!);
       } catch (e) {
         debugPrint('Error generating thumbnail at ${timeMs}ms: $e');
       }

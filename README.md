@@ -133,7 +133,7 @@ import 'dart:io';
 
 import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';
-import 'package:video_trimmer/video_trimmer.dart';
+import 'package:video_trimmer_plus/video_trimmer.dart';
 
 void main() => runApp(MyApp());
 

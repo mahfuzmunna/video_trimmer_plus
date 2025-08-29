@@ -10,7 +10,7 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:video_player/video_player.dart';
-import 'package:video_trimmer/src/utils/storage_dir.dart';
+import 'package:video_trimmer_plus/src/utils/storage_dir.dart';
 
 enum OutputType { video, gif }
 
